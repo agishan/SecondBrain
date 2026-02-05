@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\agish\\\\Desktop\\\\Obsidian Repos\\\\second-brain\" /b)"
+    ]
+  }
+}
