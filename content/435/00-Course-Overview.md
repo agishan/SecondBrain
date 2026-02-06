@@ -15,7 +15,7 @@ This course covers advanced techniques for solving **Mixed Integer Programs (MIP
     ┌────┴────┐          ┌────┴────┐          ┌────┴────┐
     │         │          │         │          │         │
  Compact   Extended     LP     Lagrangian   Branch   Branch
-(Week 1-2) (Week 2-3)  (all)   (Week 5)    & Bound  & Price
+ (Week 2)  (Week 2-3)  (all)   (Week 5)    & Bound  & Price
                                            (Week 3) (Week 5)
 ```
 
@@ -23,12 +23,22 @@ This course covers advanced techniques for solving **Mixed Integer Programs (MIP
 
 ## Table of Contents by Week
 
-### Week 1-2: MIP Formulations
+### Week 1: LP Review (Prerequisites)
+> *Foundation: Review of Linear Programming methods needed for the course*
+
+| Topic | File | Key Concepts |
+|-------|------|--------------|
+| The Simplex Method | [[Week1_Review]] | Standard form, reduced costs, tableau operations |
+| The Revised Simplex Method | [[Week1_Review#0.4 The Revised Simplex Method]] | Basis inverse, entering/leaving variables |
+| Initializing Simplex | [[Week1_Review#0.5 Initializing the Simplex Method]] | Two-Phase method, Big M method |
+| Duality in LP | [[Week1_Review#0.8 Duality in LP Primal-Dual Relationship]] | Primal-dual pairs, complementary slackness |
+| Sensitivity Analysis | [[Week1_Review#0.10 Sensitivity Analysis in LP]] | Changes in $c$ and $b$, basis optimality |
+
+### Week 2: MIP Formulations
 > *Foundation: How you model a problem affects how fast you can solve it*
 
 | Topic | File | Key Concepts |
 |-------|------|--------------|
-| Bin Packing Problem | [[Week1_Review]] | Assignment variables, capacity constraints |
 | Disaggregated vs Aggregated | [[Week 2]] | $[BP_d]$ vs $[BP_a]$ formulations |
 | [[Strength of Formulations]] | [[Week 2#1.2.1 Strength of Formulations]] | LP relaxation tightness, convex hull |
 | [[Set Covering Formulation]] | [[Week 2#1.4 A Set Partitioning/Covering Formulation]] | Packing patterns, exponential variables |
@@ -165,7 +175,7 @@ The **Bin Packing Problem** is used throughout the course:
 
 | Week | Formulation/Algorithm | Notes |
 |------|----------------------|-------|
-| 1-2 | $[BP_d]$, $[BP_a]$, $[BP_{ad}]$ | Basic MIP formulations |
+| 2 | $[BP_d]$, $[BP_a]$, $[BP_{ad}]$ | Basic MIP formulations |
 | 2 | $[BP_{sc}]$ | Set covering with patterns |
 | 2 | $[BP_{ci}]$ | Cover inequality formulation |
 | 3 | B&B, B&C | Solving the MIP |
@@ -200,7 +210,7 @@ $$\text{Heuristic bound (lower)} \leq z^* \leq \text{Relaxation bound (upper)}$$
 ## File Index
 
 ### Week 1
-- [[Week1_Review]] - MIP Formulations and Bin Packing
+- [[Week1_Review]] - LP Review: Simplex Method, Revised Simplex, Duality, Sensitivity Analysis
 
 ### Week 2
 - [[Week 2]] - Detailed formulations, strength comparison, set covering
